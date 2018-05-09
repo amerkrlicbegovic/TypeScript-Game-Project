@@ -6,7 +6,7 @@
   "scripts": {
     "start": "http-server"
   },
-  "author": "Amer Krlicbegovic",
+  "author": "Brice Wilson",
   "license": "ISC",
   "devDependencies": {
     "http-server": "^0.9.0"

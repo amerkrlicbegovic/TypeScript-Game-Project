@@ -8,17 +8,19 @@
         "**/.svn": true,
         "**/.hg": true,
         "**/.DS_Store": true,
-        "**/.gitignore": true
+        "**/.gitignore": true,
+        "npm-debug.log": true
     },
 
-    "editor.fontSize": 16,
     "editor.quickSuggestions": true,
     "editor.parameterHints": true,
     "editor.wordBasedSuggestions": true,
     "editor.selectionHighlight": false,
     "editor.suggestOnTriggerCharacters": false,
 
-    "window.zoomLevel": -1,
+    "window.zoomLevel": 1,
+
+    "terminal.integrated.fontSize": 16,
 
     "editor.cursorBlinking": "solid"
 }
