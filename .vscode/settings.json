@@ -12,6 +12,7 @@
         "npm-debug.log": true
     },
 
+
     "editor.quickSuggestions": true,
     "editor.parameterHints": true,
     "editor.wordBasedSuggestions": true,

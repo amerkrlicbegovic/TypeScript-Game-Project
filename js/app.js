@@ -1,7 +1,8 @@
 function startGame() {
-    var playerName = getInputValaue('playerName');
+    var playerName = getInputValue('playername');
     logPlayer(playerName);
-    postScore(100);
+    postScore(80, playerName);
+    postScore(-5, playerName);
 }
 function logPlayer(name) {
     if (name === void 0) { name = 'MultiMath Player'; }
@@ -9,10 +10,18 @@ function logPlayer(name) {
 }
 function postScore(score, playerName) {
     if (playerName === void 0) { playerName = 'MultiMath Player'; }
-    var scoreElement = document.getElementById('postedScore');
-    scoreElement.innerHTML = score + " - " + playerName;
+    var logger;
+    if (score < 0) {
+        logger = logError;
+    }
+    else {
+        logger = logMessage;
+    }
+    var scoreElement = document.getElementById('postedScores');
+    scoreElement.innerText = score + " - " + playerName;
+    logger("Score: " + score);
 }
-function getInputValaue(elementID) {
+function getInputValue(elementID) {
     var inputElement = document.getElementById(elementID);
     if (inputElement.value === '') {
         return undefined;
@@ -22,4 +31,8 @@ function getInputValaue(elementID) {
     }
 }
 document.getElementById('startGame').addEventListener('click', startGame);
+var logMessage = function (message) { return console.log(message); };
+function logError(error) {
+    console.error(error);
+}
 //# sourceMappingURL=app.js.map
