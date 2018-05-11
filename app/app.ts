@@ -1,3 +1,8 @@
+ /// <reference path= "player.ts" />
+ /// <reference path= "result.ts" />
+
+
+
 function startGame() {
     // starting a new game
 
@@ -48,6 +53,10 @@ let logMessage = (message: string) => console.log(message);
 function logError(error: string): void {
     console.error(error);
 }
+
+let firstPlayer: Player = new Player();
+firstPlayer.name = 'Lanier';
+console.log(firstPlayer.formatName());
 
 let myResults: Result = {
     playerName: 'Marie',

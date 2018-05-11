@@ -35,6 +35,9 @@ var logMessage = function (message) { return console.log(message); };
 function logError(error) {
     console.error(error);
 }
+var firstPlayer = new Player();
+firstPlayer.name = 'Lanier';
+console.log(firstPlayer.formatName());
 var myResults = {
     playerName: 'Marie',
     score: 5,
