@@ -30,9 +30,9 @@ function postScore(score: number, playerName: string = 'MultiMath Player'): void
 }
 
 function getInputValue(elementID: string): string | undefined {
-    
+
     let inputElement: HTMLInputElement = <HTMLInputElement>document.getElementById(elementID);
-    
+
     if (inputElement.value === '') {
         return undefined;
     }
@@ -47,4 +47,16 @@ let logMessage = (message: string) => console.log(message);
 
 function logError(error: string): void {
     console.error(error);
+}
+
+let myResults: Result = {
+    playerName: 'Marie',
+    score: 5,
+    problemCount: 5,
+    factor: 7
+}
+
+let player: Pearson = {
+    name: 'Daniel',
+    formatName: () => 'Dan'
 }
