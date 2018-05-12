@@ -1,11 +1,11 @@
- /// <reference path= "pearson.ts" />
+/// <reference path="person.ts" />
 
-
-class Player implements Pearson {
+class Player implements Person {
     name: string;
-    age?: number;
-
+    age: number;
+    highScore: number;
+    
     formatName() {
-        return this.name.toLocaleUpperCase();
+        return this.name.toUpperCase();
     }
 }

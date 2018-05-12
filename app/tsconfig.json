@@ -2,7 +2,7 @@
     "extends": "../tsconfig.base",
     "compilerOptions": {
         "removeComments": true,
-        "outhFile": "../js/app.js"
+        "outFile": "../js/app.js"
     },
     "files": [
         "./app.ts"
